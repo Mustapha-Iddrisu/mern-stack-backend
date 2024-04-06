@@ -18,9 +18,7 @@ app.use(cors(
   }
 ))
 
-app.get("/",(req,res)=>{
-  res.send("App running successfully")
-})
+
 app.use("", routes);
 
 // if(process.env.NODE_ENV==="production"){
