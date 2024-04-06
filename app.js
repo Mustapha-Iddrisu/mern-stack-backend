@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors(
   {
-    origin:["https://mern-stack-frontend-five.vercel.app/"],
+    origin:["https://mern-stack-frontend-five.vercel.app"],
     methods:["POST","GET","PUT","DELETE"],
     credentials:true
   }
