@@ -16,7 +16,7 @@ app.use(cors(
 app.get("/",(req,res)=>{
   res.send("Working successfully")
 })
-app.use("/", routes);
+app.use("/api", routes);
 
 // if(process.env.NODE_ENV==="production"){
 //   app.use(express.static("/frontend/build"))
