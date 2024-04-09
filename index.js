@@ -11,17 +11,12 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors(
-  {
-    origin:["https://mern-stack-frontend-five.vercel.app"],
-    methods:["POST","GET","PUT","DELETE"],
-    credentials:true
-  }
 ))
 
-app.get("",(req,res)=>{
+app.get("/",(req,res)=>{
   res.send("Working successfully")
 })
-app.use("", routes);
+app.use("/", routes);
 
 // if(process.env.NODE_ENV==="production"){
 //   app.use(express.static("/frontend/build"))
